@@ -6,10 +6,6 @@ from bs4 import BeautifulSoup
 
 lottory = GetNumber.Number()
 
-#term = int(raw_input("請輸入起始期數:"))
-#period = int(raw_input("請輸入購買期數:"))
-#owned = raw_input("請輸入購買獎號:")
-
 # 判斷輸入起始期數是否為九位正整數
 while True:
     term = raw_input("請輸入起始期數:")
@@ -35,7 +31,6 @@ while True:
 owned = sorted(owned)
 
 for i in range(0,period):
-    #print term+i
     GotLottory = lottory.Get(term+i)
 
     print ("大樂透第 {} 期開獎號碼：".format(term+i)),
